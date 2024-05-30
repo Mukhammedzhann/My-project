@@ -17,6 +17,7 @@ export const loginRoutes: Routes = [
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forChild(loginRoutes),
+    CommonModule,
   ],
   
   declarations: [

@@ -10,27 +10,24 @@ import { FormBuilder } from '@angular/forms';
   selector: 'app-login',
   templateUrl:'./login.component.html',
   styleUrls: ['./login.component.scss'], // styleUrls вместо styleUrl
+  
   // template: `hello`
 })
 export class LoginComponent {
+  scssProperties = {color: 'red', background: 'green'};
   myForm : FormGroup = this.formBuilder.group({
-    "userName": ["", [Validators.required]],
     "userEmail": ["", [ Validators.required, Validators.email]],
-    "phones": this.formBuilder.array([
-        ["+7", Validators.required]
-    ])
+    "userPassword": ["", [Validators.required]],
+ 
+
 });;
   constructor(private formBuilder: FormBuilder){
   }
 
-  getFormsControls() : FormArray{
-      return this.myForm.controls["phones"] as FormArray;
-  }
 
-  addPhone(){
-      (<FormArray>this.myForm.controls["phones"]).push(new FormControl("+7", Validators.required));
-  }
   submit(){
-      console.log(this.myForm);
+    console.log('is submit');
+    if (this.myForm.status === 'INVALID') return;
+    console.log(this.myForm);
   }
 }
