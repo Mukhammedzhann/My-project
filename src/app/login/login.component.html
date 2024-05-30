@@ -1,0 +1,54 @@
+<!-- <div class="login">
+    <form action="">
+        <h1>Login</h1>
+        <div class="login-title">
+            <p>Hello! Log in with your email</p>
+        </div>
+        <div class="login-email">
+            <div class="email-title">
+            <p>Email</p>
+            </div>
+            <input type="text" class="ty-text" placeholder="Enter your email" required>
+            <i class='bx bx-envelope' ></i>
+
+        </div>
+        <div class="login-password">
+            <div class="password-title">
+                <p>Password</p>
+            </div>
+            <input type="password" class="ty-text" placeholder="Enter your email" required>
+            <i class='bx bx-lock-alt' ></i>
+        </div>
+
+        <button type="submit" class="btn" >log in</button>
+    </form>
+</div>
+<div> -->
+  
+<!-- login.component.html -->
+<form [formGroup]="myForm" novalidate (ngSubmit)="submit()">
+    <div>
+        <label>Имя</label><br>
+        <input name="name"  formControlName="userName" />
+        @if(myForm.controls["userName"].invalid && myForm.controls["userName"].touched){
+            <div class="alert">Не указано имя</div>
+        }
+    </div>
+    <div>
+        <label>Email</label><br>
+        <input name="email" formControlName="userEmail" />
+        @if(myForm.controls["userEmail"].invalid && myForm.controls["userEmail"].touched){
+            <div class="alert">Некорректный email</div>
+        }
+    </div>
+    <div formArrayName="phones">
+    @for(phone of getFormsControls()["controls"]; track $index){
+        <div>
+            <label>Телефон</label><br>
+            <input formControlName="{{$index}}" />
+        </div>
+    }
+    </div>
+    <button (click)="addPhone()">Добавить телефон</button>
+    <button [disabled]="myForm.invalid">Отправить</button>
+</form>
