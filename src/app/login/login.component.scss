@@ -93,30 +93,7 @@ form {
   .login-password {
     padding-top: 20px;
 
-    input {
-      margin-top: 10px;
-      height: 100%;
-      background: $background-color;
-      border: 1px solid $background-color;
-      border-radius: 8px;
-      outline: none;
-      width: 428px;
-      height: 56px;
-      left: 426px;
-      top: 364px;
-      box-sizing: border-box;
-      margin-bottom: 24px;
-
-      &::placeholder {
-        color: $secondary-color;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0;
-        text-align: left;
-        opacity: 0.5;
-      }
-    }
+   
 
     i {
       position: absolute;
@@ -130,6 +107,9 @@ form {
     }
   }
 
+  input.ng-touched.ng-invalid {border:solid #d30038 2px;}
+  input.ng-touched.ng-valid {border:solid green 2px;}
+  
   .btn {
  
     width: 100%;
@@ -170,8 +150,6 @@ form {
 
 .alert{
   color: red;
+  background: transparent;
 }
 
-.ty-text {
-  padding-left: 20px;
-}

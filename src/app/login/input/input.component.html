@@ -1,0 +1,9 @@
+<div class="email-title">
+  <p> {{name}} </p>
+  </div>
+<input type="{{type}}" placeholder="{{placeholder}}" [formControl]="control" [ngClass]="control.status">
+<div *ngIf="control.invalid && control.touched" class="alert">
+  Некорректный
+</div>
+
+
