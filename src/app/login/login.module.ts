@@ -9,13 +9,9 @@ import { CommonModule } from '@angular/common';
 import { InputComponent } from './input/input.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
+import { routes } from '../app.routes';
 
-
-
-
-export const loginRoutes: Routes = [
-  {path: '', component: LoginComponent}
-];
+export const loginRoutes: Routes = [{ path: '', component: LoginComponent }];
 
 @NgModule({
   imports: [
@@ -24,22 +20,12 @@ export const loginRoutes: Routes = [
     RouterModule.forChild(loginRoutes),
     CommonModule,
     HttpClientModule,
-
+    RouterModule
   ],
   exports: [InputComponent],
-  
-  declarations: [
-    LoginComponent,// Объявите AppComponent
-    InputComponent
-  ],
-    providers: [],
-  bootstrap: [LoginComponent]
 
+  declarations: [LoginComponent, InputComponent],
+  providers: [],
+  bootstrap: [LoginComponent],
 })
-export class LoginModule {
-  
-}
-
-
-
-
+export class LoginModule {}

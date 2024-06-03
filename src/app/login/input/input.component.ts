@@ -1,6 +1,7 @@
 import { Input, Component, input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Validators, FormGroup } from '@angular/forms';
+
 @Component({
   selector: 'input-comp',
   templateUrl: './input.component.html',
