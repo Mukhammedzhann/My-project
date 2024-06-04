@@ -20,10 +20,8 @@ export const loginRoutes: Routes = [{ path: '', component: LoginComponent }];
     RouterModule.forChild(loginRoutes),
     CommonModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
   ],
-  exports: [InputComponent],
-
   declarations: [LoginComponent, InputComponent],
   providers: [],
   bootstrap: [LoginComponent],

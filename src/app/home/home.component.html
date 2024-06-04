@@ -1,34 +1,94 @@
+<body>
+  <div class="grid-container">
+    <div class="grid-item color1">
+      <div class="logo">
+        <div class="logo-img">
+          <img src="../assets/img/icons/Shape.png" alt="" />
+        </div>
+        <div class="logo-title">AdminPage</div>
+      </div>
+      <div class="short-info">
+        <div class="container">
+          <div class="short-info-menu">
+            <a href="#">menu</a>
+          </div>
 
-  <body>
-    <div class="grid-container">
-      <div class="grid-item color1">Grid Item 1</div>
-      <div class="grid-item color2">
-        <header>
-          <div class="grid-header">
-            <div class="grid-header-item col1">1</div>
-            <div class="grid-header-item col2">2</div>
-            <div class="grid-header-item col3">3</div>
-            <div class="grid-header-item col4">4</div>
-            <div class="grid-header-item col5">5</div>
-            <div class="grid-header-item col6">6</div>
-          </div>
-        </header>
-        <main>
-          <nav>
-            <div class="container">
-              <div class="grid-nav">
-                <div class="grid-nav-item col1">col1</div>
-                <div class="grid-nav-item col2">col2</div>
-              </div>
+          <div class="short-info-button">
+            <div class="info-button-item">
+              <!-- <button>Main</button> -->
+              <app-button
+                [name]="'Main'"
+                [icon]="'icon-main'"
+                [type]="'submit'"
+                [color]="'red'"
+              >
+              </app-button>
             </div>
-          </nav>
-          <div class="analytic">
-            <div class="container">
-                
+            <div class="info-button-item">
+              <!-- <button>Parsing</button> -->
+              <app-button
+                [name]="'Parsing'"
+                [icon]="'icon-parsing'"
+                [type]="'submit'"
+              >
+              </app-button>
+            </div>
+            <div class="info-button-item">
+              <!-- <button>Profile</button> -->
+              <app-button
+                [name]="'Profile'"
+                [icon]="'icon-profile'"
+                [type]="'submit'"
+              >
+              </app-button>
+            </div>
+            <div class="info-button-item">
+              <!-- <button>Calendar</button> -->
+              <app-button
+
+                [name]="'Calendar'"
+                [icon]="'icon-calenda'"
+                [type]="'submit'"
+              >
+              </app-button>
             </div>
           </div>
-        </main>
+        </div>
       </div>
     </div>
-  </body>
+    <div class="grid-item color2">
+      <header>
+        <div class="grid-header">
+          <div class="grid-header-item col1">
+            <div class="search">
+              
+                <!-- <img src="../assets/img/icons/search.png"class="search-icon" alt=""> -->
+            
+              <input class="search-input" type="text" placeholder="Type to search..." />
+            </div>
+          </div>
+          <div class="grid-header-item col2">2</div>
+          <div class="grid-header-item col3">3</div>
+          <div class="grid-header-item col4">4</div>
+          <div class="grid-header-item col5">5</div>
+          <div class="grid-header-item col6">6</div>
+        </div>
+      </header>
+      <main>
+        <nav>
+          <div class="container">
+            <div class="grid-nav">
+              <div class="grid-nav-item col1">col1</div>
+              <div class="grid-nav-item col2">col2</div>
+            </div>
+          </div>
+        </nav>
+        <div class="analytic">
+          <div class="container"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
 
