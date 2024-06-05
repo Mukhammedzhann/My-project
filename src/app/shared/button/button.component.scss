@@ -1,4 +1,11 @@
-button {
+// $primary-color: rgb(60, 80, 224);
+$secondary-color: rgb(100, 116, 139);
+$background-color: rgb(255, 255, 255);
+$text-color: rgb(33, 43, 54);
+$dark-text-color: rgb(28, 36, 52);
+$btn-color: rgb(48, 86, 211);
+$btn-text-color: rgb(255, 255, 255);
+.home-btn {
     border-radius: 3px;
     background-color: rgb(51, 58, 72);
     width: 228px;
@@ -21,5 +28,39 @@ button {
     border: none;
     cursor: pointer;
     gap: 10px;
-  //   transform: perspective(color);
+    transform: perspective(color);
   }
+  
+  form {
+    &.ng-invalid {
+      .btn {
+        background-color: #c5c5c5;
+      }
+    }
+  }
+    .login-btn {
+      width: 100%;
+      height: 56px;
+      border-radius: 8px;
+      background: $btn-color;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      // color: $btn-text-color;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-align: center;
+      color: aliceblue;
+    
+      text-transform: uppercase;
+      .login-btn:disabled,
+      .login-btn.not-active,
+      &.INVALID {
+        background: #c5c5c5;
+        cursor: default;
+      }
+    }
+  

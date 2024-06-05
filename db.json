@@ -1,0 +1,30 @@
+{
+    "sales": [
+        {
+            "year": 2015,
+            "amount": 5000,
+            "colorcode": "1"
+        },
+        {
+            "year": 2018,
+            "amount": 2000,
+            "colorcode": "2"
+        },
+        {
+            "year": 2019,
+            "amount": 6500,
+            "colorcode": "3"
+        },
+        {
+            "year": 2019,
+            "amount": 4000,
+            "colorcode": "4"
+        },
+
+        {
+            "year": 2009,
+            "amount": 2000,
+            "colorcode": "6"
+        }
+    ]
+}

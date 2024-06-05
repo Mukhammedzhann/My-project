@@ -1,31 +1,23 @@
-import { Component, Renderer2, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 import { HttpClient } from '@angular/common/http';
 import { MasterService } from '../home/master.service';
+
 @Component({
-  selector: 'app-home',
+  selector: 'app-mychart',
   // standalone: true,
   // imports: [],
-  templateUrl: './home.component.html',
-
-  // template: "<h2>О сайте</h2>",
-  styleUrl: './home.component.scss',
+  templateUrl: './mychart.component.html',
+  styleUrl: './mychart.component.scss',
 })
-export class HomeComponent {
-  selectedButton: string | null = null;
-
-  selectButton(button: string) {
-    this.selectedButton = button;
-  }
+export class MychartComponent implements OnInit {
+  constructor(private service: MasterService) {}
 
   // GetCustomer(){
   //   return this.http.get("http://localhost:3000/sales")
   // }
-  constructor(private service: MasterService,
-    private renderer: Renderer2,
-    private el: ElementRef
-  ) {}
+
   chartdata: any;
   labeldata: any[] = [];
   realdata: any[] = [];
@@ -41,16 +33,14 @@ export class HomeComponent {
         //   this.realdata.push(this.chartdata[i].amount);
       }
     });
-    this.RenderChart();
+     this.RenderChart();
   }
 
   RenderChart() {
-    const chartCanvas = this.el.nativeElement.querySelector('#plechart');
     const myChart = new Chart('plechart', {
       type: 'bar',
       data: {
-        labels: [
-          this.labeldata,
+        labels: [this.labeldata,
           '1',
           '2',
           '3',
@@ -86,10 +76,13 @@ export class HomeComponent {
         datasets: [
           {
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3, 100, 50,150,180],
+            data: [12, 19, 3, 5, 2, 3,100,50],
             // data: this.chartdata,
-            backgroundColor: ['#3C50E0'],
-            borderColor: ['#3C50E0'],
+            backgroundColor: ['#3C50E0',
+            ],
+            borderColor: [
+              '#3C50E0',
+            ],
             borderWidth: 1,
             borderRadius: 5,
           },
@@ -103,15 +96,5 @@ export class HomeComponent {
         },
       },
     });
-    setTimeout(() => {
-      this.renderer.removeStyle(chartCanvas, 'height');
-      this.renderer.removeStyle(chartCanvas, 'width');
-      // this.renderer.removeAttribute(chartCanvas, 'width');
-      //   this.renderer.removeAttribute(chartCanvas, 'height');
-      this.renderer.setStyle(chartCanvas, 'width', '1290px'); // Устанавливаем ширину в 100%
-      this.renderer.setStyle(chartCanvas, 'height', '397px'); // Устанавливаем высоту автоматически
-    }, 100);
-    this.renderer.setStyle(chartCanvas, 'display', ''); 
-    this.renderer.setStyle(chartCanvas, 'box-sizing', '');
   }
 }
