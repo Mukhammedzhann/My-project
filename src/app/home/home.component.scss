@@ -264,7 +264,6 @@ nav {
   .container {
     height: 397px;
     width: 1290px;
-    // padding: 0 45px;
 
     .row {
       justify-content: center;
@@ -273,6 +272,7 @@ nav {
         width: 1290px;
 
         .canvas {
+          // margin-left: 25%;
         }
       }
     }
@@ -340,12 +340,70 @@ nav {
       padding-left: 57px;
       padding-top: 94px;
 
-      ._ngcontent-ng-c3991897325{
+      ._ngcontent-ng-c3991897325 {
         transition: transform 0.3s ease;
-         
-        ._ngcontent-ng-c3991897325:hover{
+
+        ._ngcontent-ng-c3991897325:hover {
           transform: scale(1.1);
         }
+      }
+    }
+  }
+
+  .line {
+    width: 676px;
+    height: 0;
+    border: 1px solid rgb(231, 231, 231);
+    margin-top: 150px;
+  }
+
+  .chart {
+    width: 622px;
+    height: 214px;
+    left: 354px;
+    right: -298px;
+    top: 1284px;
+    bottom: -724px;
+    margin-left: 28px;
+    margin-top: 30.5px;
+
+    .container {
+      display: block;
+      .bar-chart {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; // Обновлено значение
+        position: relative;
+      }
+
+      .bar-chart-title {
+        padding-right: 10px;
+        text-align: left;
+        width: 61.77px;
+        height: 24px;
+        color: rgb(33, 43, 54);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+
+      .bar-chart-present {
+        height: 18px;
+        background-color: #3056d3;
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+
+      .bar-chart-full {
+        margin-left: 80px;
+        width: 472.89px; // "Width" исправлено на "width"
+        height: 18px;
+        border-radius: 4px;
+        background-color: #e5e7eb;
       }
     }
   }

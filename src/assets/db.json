@@ -1,28 +1,28 @@
 {
     "sales": [
         {
-            "year": 2015,
+            "year": 2020,
             "amount": 5000,
             "colorcode": "1"
         },
         {
-            "year": 2018,
+            "year": 2021,
             "amount": 2000,
             "colorcode": "2"
         },
         {
-            "year": 2019,
+            "year": 2022,
             "amount": 6500,
             "colorcode": "3"
         },
         {
-            "year": 2019,
+            "year": 2023,
             "amount": 4000,
             "colorcode": "4"
         },
 
         {
-            "year": 2009,
+            "year": 2024,
             "amount": 2000,
             "colorcode": "6"
         }

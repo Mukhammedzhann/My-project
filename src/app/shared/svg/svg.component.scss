@@ -1,0 +1,63 @@
+// svg {
+//   // fill: rgb(169, 189, 255);
+//   // stroke: black;
+//   fill: "#A9BDFF";
+//   stroke: "#fff";
+//   stroke-opacity: "0.3";
+//   stroke-width: "0.5";
+//   stroke-linecap: "round";
+//   stroke-linejoin: "round";
+//   cursor: pointer;
+//   transition: transform 0.3s ease;
+// }
+
+// svg:hover {
+//   fill: rgb(48, 86, 211);
+//   stroke-linecap: "round";
+//   stroke-linejoin: "round";
+  
+// }
+
+// path:hover {
+//   fill: rgb(48, 86, 211);
+//   color: yellow;
+// }
+
+.main{
+  text-shadow: none;
+
+  cursor: pointer;
+}
+
+
+.main:hover{
+  // fill: red;
+  // stroke:"red ";
+  // fill: red;
+}
+
+.text{
+  background: transparent;
+  cursor: pointer;
+  border: none;
+ 
+}
+
+.text:hover{
+  fill: rgb(48, 86, 211);
+  background: transparent;
+ 
+  
+}
+.main:hover{
+text-decoration: none;
+  stroke: #fff;
+  stroke:"none";
+  border: none;
+  background: transparent;
+  fill:"none";
+  
+}
+
+
+
