@@ -112,14 +112,23 @@
               <div class="grid-nav-item col1">
                 <div class="form-field">
                   <div class="date-range-picker">
-                    <input type="date" id="campaignOneStart" placeholder="Start date">
+                    <input
+                      type="date"
+                      id="campaignOneStart"
+                      placeholder="Start date"
+                    />
                   </div>
                 </div>
               </div>
               <div class="grid-nav-item col2">
                 <div class="nav-item-daily">
                   <div class="nav-item-text">Daily</div>
-                  <button class="nav-item-icon"><img src="../assets/img/icons/chevron-down (2) 1.png" alt=""></button>
+                  <button class="nav-item-icon">
+                    <img
+                      src="../assets/img/icons/chevron-down (2) 1.png"
+                      alt=""
+                    />
+                  </button>
                 </div>
               </div>
             </div>
@@ -139,8 +148,8 @@
         <aside class="aside">
           <div class="container">
             <div class="grid-item" *ngFor="let visitor of visitors">
-              <div class="item-title">{{visitor?.count}}</div>
-              <div class="item-text">{{visitor?.title}}</div>
+              <div class="item-title">{{ visitor?.count }}</div>
+              <div class="item-text">{{ visitor?.title }}</div>
             </div>
           </div>
         </aside>
@@ -184,9 +193,19 @@
           </div>
 
           <div class="shared-chart">
-    
-       
-            
+            <app-top-chart
+              *ngIf="chartdate1.length"
+              [title_name]="'Top Content'"
+              [chartdate]="chartdate1"
+            >
+            </app-top-chart>
+
+            <app-top-chart
+              *ngIf="chartdate2.length"
+              [title_name]="'Top Channels'"
+              [chartdate]="chartdate2"
+            >
+            </app-top-chart>
           </div>
         </div>
       </main>

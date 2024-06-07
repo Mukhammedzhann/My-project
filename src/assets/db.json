@@ -1,30 +1,130 @@
 {
     "sales": [
         {
-            "year": 2020,
-            "amount": 5000,
+            "year": 2000,
+            "amount": 500,
             "colorcode": "1"
         },
         {
-            "year": 2021,
-            "amount": 2000,
+            "year": 2001,
+            "amount": 800,
             "colorcode": "2"
         },
         {
-            "year": 2022,
-            "amount": 6500,
+            "year": 2002,
+            "amount": 900,
             "colorcode": "3"
         },
         {
-            "year": 2023,
-            "amount": 4000,
+            "year": 2003,
+            "amount": 1000,
             "colorcode": "4"
         },
 
         {
-            "year": 2024,
-            "amount": 2000,
+            "year": 2004,
+            "amount": 1500,
+            "colorcode": "5"
+        },
+        {
+            "year": 2005,
+            "amount": 1800,
             "colorcode": "6"
+        },
+        {
+            "year": 2006,
+            "amount": 1900,
+            "colorcode": "7"
+        },
+        {
+            "year": 2007,
+            "amount": 2000,
+            "colorcode": "8"
+        },
+        {
+            "year": 2008,
+            "amount": 2200,
+            "colorcode": "9"
+        },
+        {
+            "year": 2009,
+            "amount": 1500,
+            "colorcode": "10"
+        },
+        {
+            "year": 2010,
+            "amount": 2150,
+            "colorcode": "11"
+        },
+        {
+            "year": 2011,
+            "amount": 3500,
+            "colorcode": "12"
+        },
+        {
+            "year": 2012,
+            "amount": 2500,
+            "colorcode": "14"
+        },
+        {
+            "year": 2013,
+            "amount": 3450,
+            "colorcode": "15"
+        },
+        {
+            "year": 2014,
+            "amount": 5000,
+            "colorcode": "16"
+        },
+        {
+            "year": 2015,
+            "amount": 1900,
+            "colorcode": "17"
+        },
+        {
+            "year": 2016,
+            "amount": 5500,
+            "colorcode": "18"
+        },
+        {
+            "year": 2017,
+            "amount": 4500,
+            "colorcode": "19"
+        },
+        {
+            "year": 2018,
+            "amount": 3200,
+            "colorcode": "20"
+        },
+        {
+            "year": 2019,
+            "amount": 3800,
+            "colorcode": "21"
+        },
+        {
+            "year": 2020,
+            "amount": 3900,
+            "colorcode": "22"
+        },
+        {
+            "year": 2021,
+            "amount": 6900,
+            "colorcode": "23"
+        },
+        {
+            "year": 2022,
+            "amount": 6750,
+            "colorcode": "24"
+        },
+        {
+            "year": 2023,
+            "amount": 6300,
+            "colorcode": "25"
+        },
+        {
+            "year": 2024,
+            "amount": 7900,
+            "colorcode": "26"
         }
     ]
 }

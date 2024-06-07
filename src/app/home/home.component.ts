@@ -125,16 +125,16 @@ export class HomeComponent {
         },
       },
     });
-    // setTimeout(() => {
-    //   this.renderer.removeStyle(chartCanvas, 'height');
-    //   this.renderer.removeStyle(chartCanvas, 'width');
-    //   // this.renderer.removeAttribute(chartCanvas, 'width');
-    //   //   this.renderer.removeAttribute(chartCanvas, 'height');
-    //   this.renderer.setStyle(chartCanvas, 'width', '1290px'); // Устанавливаем ширину в 100%
-    //   this.renderer.setStyle(chartCanvas, 'height', '397px'); // Устанавливаем высоту автоматически
-    // }, 100);
-    // this.renderer.setStyle(chartCanvas, 'display', ''); 
-    // this.renderer.setStyle(chartCanvas, 'box-sizing', '');
+    setTimeout(() => {
+      this.renderer.removeStyle(chartCanvas, 'height');
+      this.renderer.removeStyle(chartCanvas, 'width');
+      // this.renderer.removeAttribute(chartCanvas, 'width');
+      //   this.renderer.removeAttribute(chartCanvas, 'height');
+      this.renderer.setStyle(chartCanvas, 'width', '1290px'); // Устанавливаем ширину в 100%
+      this.renderer.setStyle(chartCanvas, 'height', '397px'); // Устанавливаем высоту автоматически
+    }, 100);
+    this.renderer.setStyle(chartCanvas, 'display', ''); 
+    this.renderer.setStyle(chartCanvas, 'box-sizing', '');
   }
 
   // @Input() title_name!: string;
