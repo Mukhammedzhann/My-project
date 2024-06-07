@@ -20,7 +20,17 @@ export class MasterService {
       map((data:{info: any}) => data.info));
   }
 
-
+  // Getcharttop(){
+  //   return this.http.get<any>("./assets/shared.json").pipe(
+  //     map((data:{topbar1: any}) => data.topbar1));
+  // }
+  // Getcharttop2(){
+  //   return this.http.get<any>("./assets/shared.json").pipe(
+  //     map((data:{topbar2: any}) => data.topbar2));
+  // }
+  Getcharttop3(){
+    return this.http.get<any>("./assets/shared.json");
+  }
 
 
   // Add more functions as needed for your specific data and operations
@@ -34,4 +44,16 @@ export interface IData {
 export interface ICity {
     title: string;
     percent: number;
+}
+
+export interface IBar1 {
+  url: string;
+  view: number;
+  unique: number;
+}
+
+export interface IBar2 {
+  url: string,
+  view: number,
+  unique: number,
 }

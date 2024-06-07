@@ -1,0 +1,130 @@
+// 
+
+.top-chart {
+    width: 582px;
+    height: 372px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(226, 232, 240);
+    border-left: 1px solid rgb(226, 232, 240);
+    border-right: 1px solid rgb(226, 232, 240);
+    border-radius: 2px;
+    box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+    background: rgb(255, 255, 255);
+    margin-bottom: 30px;
+
+}
+
+.container {
+    padding: 30px 30px;
+
+}
+
+.chart-item {
+    display: flex;
+    margin-bottom: 5px;
+    position: relative;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-url-full {
+    width: 349px;
+    height: 38px;
+}
+
+.item-url {
+    height: 38px;
+    border-radius: 4px;
+    background: rgb(239, 244, 251);
+    width: 349px;
+    padding: 8px;
+    color: rgb(28, 36, 52);
+    // font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    align-items: center;
+    /* Выравнивание по вертикали */
+    justify-content: center;
+    /* Выравнивание по горизонтали */
+
+}
+
+.item-views {
+    margin-left: 21px;
+}
+
+.item-uniques {
+    margin-left: 96px;
+    color: rgb(28, 36, 52);
+    // font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 30px;
+    height: 22px;
+}
+
+
+.title-item-url-full {
+    width: 27px;
+    height: 22px;
+    color: rgb(100, 116, 139);
+    // font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+.title-item-url {}
+
+.title-item-views {
+    width: 37px;
+    height: 22px;
+    width: 37px;
+    height: 22px;
+    color: rgb(100, 116, 139);
+    // font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-left: 330px;
+}
+
+.title-item-uniques {
+    width: 52px;
+    height: 22px;
+    color: rgb(100, 116, 139);
+    // font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-left: 85px;
+    text-align: right;
+}
+
+.commence-chart {
+    display: flex;
+}
+
+.title-top-chart {
+    width: 127px;
+    height: 28px;
+    color: rgb(33, 43, 54);
+    // font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.btn {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    margin-left: 375px;
+    margin-bottom: 27px;
+}

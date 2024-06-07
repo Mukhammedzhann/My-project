@@ -1,0 +1,64 @@
+<div class="top-chart">
+  <div class="container">
+    <div class="commence-chart">
+      <div class="title-top-chart">{{ title_name }}</div>
+      <button class="btn">
+        <img src="../assets/img/icons/more-alt.png" alt="" />
+      </button>
+    </div>
+
+    <div class="chart-item">
+      <div class="title-item-url-full">
+        <div class="title-item-url" style="background-color: inherit">URL</div>
+      </div>
+      <div class="title-item-views">Views</div>
+      <div class="title-item-uniques">Uniques</div>
+    </div>
+    <div class="chart-item" *ngFor="let city of chartdate">
+      <div class="item-url-full">
+        <div
+          class="item-url"
+          [ngStyle]="{
+            width: (city.view / maxViews) * 100 + '%'
+          }"
+        >
+          {{ city.url }}
+        </div>
+      </div>
+      <div class="item-views">{{ city.view }}</div>
+      <div class="item-uniques">{{ city.unique }}</div>
+    </div>
+    <!-- <div class="chart-item">
+        <div class="item-url-full">
+          <div class="item-url" style="width: 70%">/blog/</div>
+        </div>
+        <div class="item-views">376</div>
+        <div class="item-uniques">139</div>
+      </div>
+      <div class="chart-item">
+        <div class="item-url-full">
+          <div class="item-url" style="width: 20%">/reserve/success</div>
+        </div>
+        <div class="item-views">468</div>
+        <div class="item-uniques">290</div>
+      </div>
+      <div class="chart-item">
+        <div class="item-url-full">
+          <div class="item-url" style="width: 55%">
+            /product/product-details
+          </div>
+        </div>
+        <div class="item-views">298</div>
+        <div class="item-uniques">176</div>
+      </div>
+      <div class="chart-item">
+        <div class="item-url-full">
+          <div class="item-url" style="width: 48%">
+            /blog/digital-marketing
+          </div>
+        </div>
+        <div class="item-views">179</div>
+        <div class="item-uniques">57</div>
+      </div> -->
+  </div>
+</div>

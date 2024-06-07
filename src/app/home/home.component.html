@@ -109,8 +109,19 @@
         <nav>
           <div class="container">
             <div class="grid-nav">
-              <div class="grid-nav-item col1">col1</div>
-              <div class="grid-nav-item col2">col2</div>
+              <div class="grid-nav-item col1">
+                <div class="form-field">
+                  <div class="date-range-picker">
+                    <input type="date" id="campaignOneStart" placeholder="Start date">
+                  </div>
+                </div>
+              </div>
+              <div class="grid-nav-item col2">
+                <div class="nav-item-daily">
+                  <div class="nav-item-text">Daily</div>
+                  <button class="nav-item-icon"><img src="../assets/img/icons/chevron-down (2) 1.png" alt=""></button>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -124,67 +135,87 @@
             </div>
           </div>
         </div>
-        <div class="cities">
-          <div class="container">
-            <div class="top-title">
-              <h2>Top Cities</h2>
-            </div>
-            <div class="top-button">
-              <button class="btn">
-                Last 7 days
-                <img src="" alt="" />
-              </button>
-            </div>
-          </div>
 
-          <div class="map-card">
-            <div class="container">
-              <app-svg></app-svg>
+        <aside class="aside">
+          <div class="container">
+            <div class="grid-item" *ngFor="let visitor of visitors">
+              <div class="item-title">{{visitor?.count}}</div>
+              <div class="item-text">{{visitor?.title}}</div>
             </div>
           </div>
-          <div class="line"></div>
-          <div class="chart">
+        </aside>
+        <div class="cities">
+          <div class="nav-cities">
             <div class="container">
-              <div class="bar-chart" *ngFor="let city of barchart">
-                <div class="bar-chart-title">{{ city.title }}</div>
-                <div class="bar-chart-full">
-                  <div
-                    class="bar-chart-present"
-                    [ngStyle]="{ width: (city.percent/maxPercent)*100 + '%' }"
-                  >
-                    {{ city.percent }}
+              <div class="top-title">
+                <h2>Top Cities</h2>
+              </div>
+              <div class="top-button">
+                <button class="btn">
+                  Last 7 days
+                  <img src="" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="map-card">
+              <div class="container">
+                <app-svg></app-svg>
+              </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="chart">
+              <div class="container">
+                <div class="bar-chart" *ngFor="let city of barchart">
+                  <div class="bar-chart-title">{{ city.title }}</div>
+                  <div class="bar-chart-full">
+                    <div
+                      class="bar-chart-present"
+                      [ngStyle]="{
+                        width: (city.percent / maxPercent) * 100 + '%'
+                      }"
+                    >
+                      {{ city.percent }}
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <!-- <div class="bar-chart">
-                <div class="bar-chart-title">Алматы</div>
-                <div class="bar-chart-full">
-                  <div class="bar-chart-present" style="width: 26%">26%</div>
-                </div>
-              </div>
-              <div class="bar-chart">
-                <div class="bar-chart-title">Шымкент</div>
-                <div class="bar-chart-full">
-                  <div class="bar-chart-present" style="width: 30%">30%</div>
-                </div>
-              </div>
-              <div class="bar-chart">
-                <div class="bar-chart-title">Атырау</div>
-                <div class="bar-chart-full">
-                  <div class="bar-chart-present" style="width: 50%">50%</div>
-                </div>
-              </div> -->
             </div>
+          </div>
+
+          <div class="shared-chart">
+    
+       
+            
           </div>
         </div>
       </main>
     </div>
   </div>
 
+  <!-- <app-top-chart></app-top-chart> -->
   <!-- {{ chartdata | json }}
-  <br />
-  <ul>
-    <li *ngFor="let d of chartdata">{{ d?.year }} | {{ d?.amount }}</li>
-  </ul> -->
+    <br />
+    <ul>
+      <li *ngFor="let d of chartdata">{{ d?.year }} | {{ d?.amount }}</li>
+    </ul> -->
 </body>
+
+<!-- <div class="bar-chart">
+    <div class="bar-chart-title">Алматы</div>
+    <div class="bar-chart-full">
+      <div class="bar-chart-present" style="width: 26%">26%</div>
+    </div>
+  </div>
+  <div class="bar-chart">
+    <div class="bar-chart-title">Шымкент</div>
+    <div class="bar-chart-full">
+      <div class="bar-chart-present" style="width: 30%">30%</div>
+    </div>
+  </div>
+  <div class="bar-chart">
+    <div class="bar-chart-title">Атырау</div>
+    <div class="bar-chart-full">
+      <div class="bar-chart-present" style="width: 50%">50%</div>
+    </div>
+  </div> -->

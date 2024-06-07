@@ -242,6 +242,25 @@ nav {
         padding: 45px 45px;
         width: 238px;
         height: 40px;
+        .form-field {
+          width: 238px;
+          height: 40px;
+        }
+        .form-field label {
+          display: block;
+          margin-bottom: 5px;
+          width: 238px;
+          height: 40px;
+        }
+        .form-field input {
+          width: calc(50% - 10px);
+          padding: 8px;
+          margin-right: 10px;
+          box-sizing: border-box;
+          width: 238px;
+          height: 40px;
+          border: none;
+        }
       }
     }
 
@@ -249,7 +268,38 @@ nav {
       padding: 45px 45px;
       width: 88px;
       height: 40px;
-      margin-left: auto;
+      margin-left: 500px;
+
+      .nav-item-daily {
+        box-sizing: border-box;
+        border: 1px solid rgb(226, 232, 240);
+        border-radius: 4px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+        background: rgb(255, 255, 255);
+        display: flex;
+        box-sizing: border-box;
+        width: 88px;
+        height: 40px;
+        border: 1px solid rgb(226, 232, 240);
+        border-radius: 4px;
+
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+        background: rgb(255, 255, 255);
+        .nav-item-text {
+          width: 32px;
+          height: 22px;
+          padding: 9px 15px;
+          color: rgb(100, 116, 139);
+          font-family: Poppins;
+          font-size: 14px;
+        }
+        .nav-item-icon {
+          background: transparent;
+          border: none;
+          padding: 11px 25px;
+         
+        }
+      }
     }
   }
 }
@@ -264,6 +314,14 @@ nav {
   .container {
     height: 397px;
     width: 1290px;
+    border-bottom: 1px solid rgb(226, 232, 240);
+    border-left: 1px solid rgb(226, 232, 240);
+    border-right: 1px solid rgb(226, 232, 240);
+    border-radius: 2px;
+    /* Shadow */
+    box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+    /* White */
+    background: rgb(255, 255, 255);
 
     .row {
       justify-content: center;
@@ -279,12 +337,98 @@ nav {
   }
 }
 
+.aside {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    width: 1290px;
+    height: 120px;
+    left: 325px;
+    right: 45px;
+    top: 612px;
+    bottom: 864px;
+    margin: 26px 46px;
+    // background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(226, 232, 240);
+    border-left: 1px solid rgb(226, 232, 240);
+    border-right: 1px solid rgb(226, 232, 240);
+    border-radius: 2px;
+    /* Shadow */
+    box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+    /* White */
+    background: rgb(255, 255, 255);
+    .grid-item {
+      padding: 30px 90px;
+      width: 140.01px;
+      height: 58px;
+      .item-title {
+        width: 73px;
+        height: 34px;
+        left: 416px;
+        right: -394px;
+        top: 643px;
+        color: rgb(28, 36, 52);
+        font-family: Poppins;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+      }
+
+      //   .item-title::before{
+      //     content: '|';
+      //     width: 30px;
+      //     height: 30px;
+      //     display: inline-block;
+      //     position: absolute;
+      //     color: #1c2434;
+      //     // left: 0;
+      //     // top: 50%;
+      //     // transform: translateY(-50%);
+      //  padding-left: 158px;
+      //   }
+
+      .item-text {
+        width: 150px;
+        height: 22px;
+        left: 416px;
+        right: -416px;
+        top: 679px;
+        bottom: -643px;
+        color: rgb(100, 116, 139);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+      }
+    }
+    .grid-item::before {
+      content: "|";
+      font-size: 50px;
+      border: 0px solid rgb(226, 232, 240);
+      display: inline-block;
+      position: absolute;
+      color: rgb(226, 232, 240);
+      font-weight: 5px;
+
+      // left: 0;
+      // top: 50%;
+      // transform: translateY(-50%);
+      padding-left: 158px;
+    }
+  }
+}
 .cities {
   margin-top: 30px;
   margin-left: 44px;
   height: 774px;
   width: 676px;
   background-color: #ffffff;
+  display: flex;
+
+  .shared-chart {
+    margin-left: 30px;
+  }
   .container {
     display: flex;
     justify-content: space-between;

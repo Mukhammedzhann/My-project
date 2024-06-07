@@ -1,0 +1,57 @@
+{
+  "topbar1": [
+    {
+      "url": "/",
+      "view": 1500,
+      "unique": 2100
+    },
+    {
+      "url": "/blog/",
+      "view": 376,
+      "unique": 139
+    },
+    {
+      "url": "/reserve/success",
+      "view": 468,
+      "unique": 290
+    },
+    {
+      "url": "/product/product-details",
+      "view": 298,
+      "unique": 176
+    },
+    {
+      "url": "/blog/digital-marketing",
+      "view": 179,
+      "unique": 57
+    }
+  ],
+
+  "topbar2": [
+    {
+      "url": "Khabar 24",
+      "view": 4200,
+      "unique": 3900
+    },
+    {
+      "url": "Qazazqstan",
+      "view": 1900,
+      "unique": 509
+    },
+    {
+      "url": "QazSport",
+      "view": 1500,
+      "unique": 986
+    },
+    {
+      "url": "Elarna",
+      "view": 974,
+      "unique": 639
+    },
+    {
+      "url": "Balapan",
+      "view": 179,
+      "unique": 57
+    }
+  ]
+}
